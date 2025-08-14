@@ -1,0 +1,6 @@
+@echo off
+echo Starting SeekHelp Desktop Application...
+echo.
+echo Using Maven to run JavaFX application...
+.\apache-maven-3.9.6\bin\mvn.cmd javafx:run
+pause

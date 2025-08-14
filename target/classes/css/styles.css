@@ -1,0 +1,1384 @@
+/* Main Container */
+.main-container {
+    -fx-background-color: #f0fdf4; /* mint-50 */
+}
+
+/* Header Styles */
+.header {
+    -fx-background-color: white;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 2);
+    -fx-border-color: #e5e7eb;
+    -fx-border-width: 0 0 1 0;
+}
+
+.app-title {
+    -fx-font-family: "System";
+    -fx-font-weight: bold;
+    -fx-font-size: 24px;
+    -fx-text-fill: #15803d; /* forest-green */
+}
+
+.user-label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #6b7280;
+}
+
+.admin-badge {
+    -fx-background-color: #fef3c7;
+    -fx-text-fill: #92400e;
+    -fx-font-size: 12px;
+    -fx-padding: 4 8;
+    -fx-background-radius: 12;
+}
+
+.menu-button, .notification-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-cursor: hand;
+}
+
+.menu-button:hover, .notification-button:hover {
+    -fx-background-color: #f0fdf4;
+    -fx-background-radius: 8;
+}
+
+.has-notifications {
+    -fx-background-color: #dc2626;
+    -fx-background-radius: 50;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    -fx-background-color: white;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 2);
+    -fx-border-color: #e5e7eb;
+    -fx-border-width: 0 1 0 0;
+}
+
+.sidebar-title {
+    -fx-font-family: "System";
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+    -fx-text-fill: #15803d;
+}
+
+.nav-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-text-fill: #6b7280;
+    -fx-cursor: hand;
+    -fx-background-radius: 10;
+    -fx-padding: 12 16;
+}
+
+.nav-button:hover {
+    -fx-background-color: #f0fdf4;
+}
+
+.nav-button.active {
+    -fx-background-color: #f0fdf4;
+    -fx-text-fill: #15803d;
+    -fx-font-weight: bold;
+}
+
+.nav-button-text {
+    -fx-font-size: 16px;
+    -fx-font-weight: 500;
+}
+
+.logout-button {
+    -fx-text-fill: #dc2626;
+    -fx-font-size: 16px;
+    -fx-font-weight: 500;
+}
+
+.logout-button:hover {
+    -fx-background-color: #fef2f2;
+}
+
+.sidebar-separator {
+    -fx-background-color: #e5e7eb;
+}
+
+/* Auth Styles */
+.auth-container {
+    -fx-background-color: #f0fdf4;
+}
+
+.auth-form-container {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 15, 0, 0, 3);
+}
+
+.auth-hero {
+    -fx-background-color: #15803d;
+    -fx-background-radius: 0 12 12 0;
+}
+
+.auth-tabs .tab-header-background {
+    -fx-background-color: transparent;
+}
+
+.auth-tabs .tab {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.auth-tabs .tab:selected {
+    -fx-background-color: #f0fdf4;
+    -fx-background-radius: 8;
+}
+
+.auth-input {
+    -fx-background-color: #f9fafb;
+    -fx-border-color: #d1d5db;
+    -fx-border-radius: 8;
+    -fx-padding: 14;
+    -fx-font-size: 16px;
+}
+
+.auth-input:focused {
+    -fx-border-color: #15803d;
+    -fx-background-color: white;
+}
+
+.auth-button {
+    -fx-background-color: #15803d;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-padding: 16 24;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+.auth-button:hover {
+    -fx-background-color: #16a34a;
+}
+
+.auth-button:disabled {
+    -fx-background-color: #9ca3af;
+    -fx-cursor: default;
+}
+
+.auth-button-secondary {
+    -fx-background-color: #f0fdf4;
+    -fx-text-fill: #15803d;
+    -fx-border-color: #15803d;
+    -fx-border-width: 2;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-padding: 16 24;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+.auth-button-secondary:hover {
+    -fx-background-color: #dcfce7;
+}
+
+/* Home Styles */
+.home-container {
+    -fx-background-color: #f0fdf4;
+}
+
+.service-card {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 8, 0, 0, 3);
+    -fx-cursor: hand;
+}
+
+.service-card:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 12, 0, 0, 4);
+}
+
+.service-card.disabled {
+    -fx-opacity: 0.7;
+}
+
+.explore-button {
+    -fx-background-color: #eff6ff;
+    -fx-text-fill: #2563eb;
+    -fx-border-color: #bfdbfe;
+    -fx-border-width: 2;
+    -fx-background-radius: 8;
+    -fx-padding: 12 20;
+    -fx-font-size: 16px;
+    -fx-font-weight: 500;
+    -fx-cursor: hand;
+}
+
+.explore-button:hover {
+    -fx-background-color: #dbeafe;
+}
+
+.premium-button {
+    -fx-background-color: #f3f4f6;
+    -fx-text-fill: #9ca3af;
+    -fx-border-color: #d1d5db;
+    -fx-border-width: 2;
+    -fx-background-radius: 8;
+    -fx-padding: 12 20;
+    -fx-font-size: 16px;
+    -fx-font-weight: 500;
+    -fx-cursor: default;
+}
+
+.disabled-button {
+    -fx-background-color: #f3f4f6;
+    -fx-text-fill: #9ca3af;
+    -fx-border-color: #d1d5db;
+    -fx-border-width: 2;
+    -fx-background-radius: 8;
+    -fx-padding: 12 20;
+    -fx-font-size: 16px;
+    -fx-font-weight: 500;
+    -fx-cursor: default;
+}
+
+.emergency-banner {
+    -fx-background-color: #dc2626;
+    -fx-background-radius: 12;
+}
+
+.emergency-button {
+    -fx-background-color: white;
+    -fx-text-fill: #dc2626;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-padding: 14 24;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+.emergency-button:hover {
+    -fx-background-color: #fef2f2;
+}
+
+/* Blood Donors Styles */
+.blood-donors-container {
+    -fx-background-color: #f0fdf4;
+}
+
+.donor-card {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 8, 0, 0, 3);
+}
+
+.blood-type-badge {
+    -fx-background-color: #fef2f2;
+    -fx-text-fill: #dc2626;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 6 12;
+    -fx-background-radius: 8;
+}
+
+.contact-button {
+    -fx-background-color: #15803d;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-padding: 12 20;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+.contact-button:hover {
+    -fx-background-color: #16a34a;
+}
+
+/* Hospitals Styles */
+.hospitals-container {
+    -fx-background-color: #f0fdf4;
+}
+
+.hospital-card {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 8, 0, 0, 3);
+}
+
+.hospital-type-badge {
+    -fx-background-color: #f0fdf4;
+    -fx-text-fill: #15803d;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 6 12;
+    -fx-background-radius: 8;
+}
+
+.emergency-badge {
+    -fx-background-color: #f0fdf4;
+    -fx-text-fill: #15803d;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 6 12;
+    -fx-background-radius: 8;
+}
+
+/* Profile Styles */
+.profile-container {
+    -fx-background-color: #f0fdf4;
+}
+
+.profile-card {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 8, 0, 0, 3);
+}
+
+.edit-button, .settings-button {
+    -fx-background-color: #15803d;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-padding: 14 24;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+.edit-button:hover, .settings-button:hover {
+    -fx-background-color: #16a34a;
+}
+
+/* About Styles */
+.about-container {
+    -fx-background-color: #f0fdf4;
+}
+
+.info-card {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 8, 0, 0, 3);
+}
+
+/* Emergency Services */
+.emergency-container {
+    -fx-background-color: #f8fafc;
+}
+
+.sos-button {
+    -fx-background-color: #dc2626;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+    -fx-background-radius: 16;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(220, 38, 38, 0.4), 20, 0, 0, 8);
+}
+
+.sos-button:hover {
+    -fx-background-color: #b91c1c;
+}
+
+.sos-button-active {
+    -fx-background-color: #991b1b;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+    -fx-background-radius: 16;
+    -fx-cursor: hand;
+}
+
+.emergency-number-box {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 8, 0, 0, 3);
+    -fx-border-color: #e5e7eb;
+    -fx-border-radius: 10;
+}
+
+.call-button {
+    -fx-background-color: #15803d;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-padding: 12 20;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+.call-button:hover {
+    -fx-background-color: #16a34a;
+}
+
+.contact-row {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-padding: 18;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 8, 0, 0, 3);
+}
+
+.contact-call-button {
+    -fx-background-color: #2563eb;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-padding: 12 20;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+.contact-call-button:hover {
+    -fx-background-color: #1d4ed8;
+}
+
+.service-card {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 8, 0, 0, 3);
+    -fx-border-color: #e5e7eb;
+    -fx-border-radius: 10;
+}
+
+.service-action-button {
+    -fx-background-color: #15803d;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-padding: 12 20;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+.service-action-button:hover {
+    -fx-background-color: #16a34a;
+}
+
+/* Admin Dashboard */
+.admin-container {
+    -fx-background-color: #f8fafc;
+}
+
+.admin-tabs {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 8, 0, 0, 3);
+}
+
+.admin-badge {
+    -fx-background-color: #dc2626;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+    -fx-padding: 6 12;
+    -fx-background-radius: 6;
+}
+
+.stat-card {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 8, 0, 0, 3);
+    -fx-border-color: #e5e7eb;
+    -fx-border-radius: 10;
+}
+
+.action-card {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 8, 0, 0, 3);
+    -fx-border-color: #e5e7eb;
+    -fx-border-radius: 10;
+}
+
+.action-button {
+    -fx-background-color: #2563eb;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-padding: 12 20;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+.action-button:hover {
+    -fx-background-color: #1d4ed8;
+}
+
+.admin-button {
+    -fx-background-color: #15803d;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-padding: 14 24;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+.admin-button:hover {
+    -fx-background-color: #16a34a;
+}
+
+.admin-button-danger {
+    -fx-background-color: #dc2626;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-padding: 14 24;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+.admin-button-danger:hover {
+    -fx-background-color: #b91c1c;
+}
+
+.status-row {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-padding: 18;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 8, 0, 0, 3);
+}
+
+.analytics-card {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 8, 0, 0, 3);
+    -fx-border-color: #e5e7eb;
+    -fx-border-radius: 10;
+}
+
+.chart-container {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 8, 0, 0, 3);
+    -fx-border-color: #e5e7eb;
+    -fx-border-radius: 10;
+}
+
+.chart-placeholder {
+    -fx-background-color: #f8fafc;
+    -fx-background-radius: 10;
+    -fx-border-color: #e5e7eb;
+    -fx-border-radius: 10;
+}
+
+.save-button {
+    -fx-background-color: #15803d;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 16 28;
+    -fx-background-radius: 10;
+    -fx-cursor: hand;
+    -fx-font-size: 16px;
+}
+
+.save-button:hover {
+    -fx-background-color: #16a34a;
+}
+
+/* Symptom Checker */
+.symptom-checker-container {
+    -fx-background-color: #f8fafc;
+}
+
+.symptom-checkbox {
+    -fx-font-size: 16px;
+}
+
+.analyze-button {
+    -fx-background-color: #7c3aed;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 16 28;
+    -fx-background-radius: 10;
+    -fx-cursor: hand;
+    -fx-font-size: 16px;
+}
+
+.analyze-button:hover {
+    -fx-background-color: #6d28d9;
+}
+
+.result-textarea {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-border-color: #e5e7eb;
+    -fx-border-radius: 10;
+    -fx-font-family: "Monaco", "Consolas", monospace;
+    -fx-font-size: 14px;
+}
+
+/* AI Medical Bot */
+.ai-medical-bot-container {
+    -fx-background-color: #f8fafc;
+}
+
+.user-message {
+    -fx-background-color: #2563eb;
+    -fx-text-fill: white;
+    -fx-background-radius: 16;
+    -fx-padding: 14;
+}
+
+.bot-message {
+    -fx-background-color: white;
+    -fx-text-fill: #1f2937;
+    -fx-background-radius: 16;
+    -fx-padding: 14;
+    -fx-border-color: #e5e7eb;
+    -fx-border-radius: 16;
+}
+
+.quick-action-button {
+    -fx-background-color: #f3f4f6;
+    -fx-text-fill: #374151;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-padding: 12 20;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+    -fx-border-color: #d1d5db;
+    -fx-border-radius: 8;
+}
+
+.quick-action-button:hover {
+    -fx-background-color: #e5e7eb;
+}
+
+.send-button {
+    -fx-background-color: #15803d;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-padding: 12 20;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+.send-button:hover {
+    -fx-background-color: #16a34a;
+}
+
+.clear-button {
+    -fx-background-color: #6b7280;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-padding: 12 20;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+.clear-button:hover {
+    -fx-background-color: #4b5563;
+}
+
+/* Symptom Checker & AI Bot Styles */
+.symptom-checker-container, .ai-medical-bot-container {
+    -fx-background-color: #f0fdf4;
+}
+
+.chat-card {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 8, 0, 0, 3);
+}
+
+.coming-soon-button, .start-chat-button {
+    -fx-background-color: #2563eb;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-padding: 16 28;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+.coming-soon-button:hover, .start-chat-button:hover {
+    -fx-background-color: #1d4ed8;
+}
+
+/* ComboBox Styles */
+.combo-box {
+    -fx-background-color: white;
+    -fx-border-color: #d1d5db;
+    -fx-border-radius: 8;
+    -fx-padding: 10;
+    -fx-font-size: 16px;
+}
+
+.combo-box:focused {
+    -fx-border-color: #15803d;
+}
+
+.combo-box .list-cell {
+    -fx-text-fill: #1f2937;
+    -fx-font-size: 16px;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: white;
+    -fx-border-color: #d1d5db;
+    -fx-border-radius: 8;
+}
+
+.combo-box-popup .list-view .list-cell {
+    -fx-padding: 10 16;
+    -fx-background-color: transparent;
+    -fx-font-size: 16px;
+}
+
+.combo-box-popup .list-view .list-cell:hover {
+    -fx-background-color: #f0fdf4;
+}
+
+.combo-box-popup .list-view .list-cell:selected {
+    -fx-background-color: #15803d;
+    -fx-text-fill: white;
+}
+
+/* TextField Styles */
+.text-field {
+    -fx-background-color: white;
+    -fx-border-color: #d1d5db;
+    -fx-border-radius: 8;
+    -fx-padding: 10 16;
+    -fx-font-size: 16px;
+}
+
+.text-field:focused {
+    -fx-border-color: #15803d;
+}
+
+/* Button Styles */
+.button {
+    -fx-cursor: hand;
+    -fx-font-size: 16px;
+}
+
+.button:disabled {
+    -fx-opacity: 0.6;
+    -fx-cursor: default;
+}
+
+/* ScrollPane Styles */
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .scroll-bar:vertical {
+    -fx-background-color: #f3f4f6;
+    -fx-pref-width: 14;
+}
+
+.scroll-pane .scroll-bar:vertical .thumb {
+    -fx-background-color: #d1d5db;
+    -fx-background-radius: 8;
+}
+
+.scroll-pane .scroll-bar:vertical .thumb:hover {
+    -fx-background-color: #9ca3af;
+}
+
+/* Alert Styles */
+.dialog-pane {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+}
+
+.dialog-pane .header-panel {
+    -fx-background-color: #15803d;
+}
+
+.dialog-pane .header-panel .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+}
+
+.dialog-pane .content {
+    -fx-padding: 24;
+}
+
+.dialog-pane .button {
+    -fx-background-color: #15803d;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-padding: 12 20;
+    -fx-background-radius: 8;
+}
+
+.dialog-pane .button:hover {
+    -fx-background-color: #16a34a;
+}
+
+/* TabPane Styles */
+.tab-pane {
+    -fx-background-color: transparent;
+}
+
+.tab-pane .tab-header-area {
+    -fx-background-color: transparent;
+}
+
+.tab-pane .tab-header-background {
+    -fx-background-color: transparent;
+}
+
+.tab-pane .tab {
+    -fx-background-color: #f3f4f6;
+    -fx-background-radius: 8 8 0 0;
+    -fx-padding: 12 24;
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: white;
+}
+
+.tab-pane .tab .tab-label {
+    -fx-text-fill: #6b7280;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
+
+.tab-pane .tab:selected .tab-label {
+    -fx-text-fill: #15803d;
+}
+
+/* General Utility Classes */
+.text-center {
+    -fx-alignment: center;
+}
+
+.text-left {
+    -fx-alignment: center-left;
+}
+
+.text-right {
+    -fx-alignment: center-right;
+}
+
+.wrap-text {
+    -fx-wrap-text: true;
+}
+
+/* Hospitals View Specific Styles */
+.hospitals-scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.hospitals-scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+.location-section, .search-section, .map-section, .hospitals-section, .details-section {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 8, 0, 0, 3);
+    -fx-border-color: #e5e7eb;
+    -fx-border-radius: 12;
+}
+
+.map-view {
+    -fx-background-color: #f8fafc;
+    -fx-border-color: #e5e7eb;
+    -fx-border-radius: 10;
+}
+
+.features-box {
+    -fx-background-color: #f0fdf4;
+    -fx-border-color: #bbf7d0;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+.success-button {
+    -fx-background-color: #059669;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-padding: 14 24;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+.success-button:hover {
+    -fx-background-color: #047857;
+}
+
+/* Hospital Card Enhancements */
+.hospital-card:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 12, 0, 0, 4);
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+    -fx-transition: all 0.2s ease-in-out;
+}
+
+/* Map Controls */
+.map-controls {
+    -fx-spacing: 12;
+    -fx-alignment: center-left;
+}
+
+/* Location Status */
+.location-status {
+    -fx-font-size: 14px;
+    -fx-text-fill: #6b7280;
+}
+
+.location-status.enabled {
+    -fx-text-fill: #059669;
+}
+
+/* Search Controls */
+.search-controls {
+    -fx-spacing: 18;
+    -fx-alignment: center-left;
+}
+
+.search-controls .combo-box {
+    -fx-background-color: white;
+    -fx-border-color: #d1d5db;
+    -fx-border-radius: 8;
+    -fx-padding: 8;
+    -fx-font-size: 16px;
+}
+
+.search-controls .text-field {
+    -fx-background-color: white;
+    -fx-border-color: #d1d5db;
+    -fx-border-radius: 8;
+    -fx-padding: 10 16;
+    -fx-font-size: 16px;
+}
+
+/* Info Cards */
+.info-card {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 8, 0, 0, 3);
+    -fx-border-color: #e5e7eb;
+    -fx-border-radius: 12;
+}
+
+.info-card:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 12, 0, 0, 4);
+}
+
+/* Message Center & Customer Care Styles */
+.message-center-scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.message-center-scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+.message-section, .customer-care-section, .live-chat-section, .quick-actions-section {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 8, 0, 0, 3);
+    -fx-border-color: #e5e7eb;
+    -fx-border-radius: 12;
+}
+
+.message-input-area, .ticket-area {
+    -fx-background-color: #f8fafc;
+    -fx-border-color: #e5e7eb;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+.message-text-input {
+    -fx-background-color: white;
+    -fx-border-color: #d1d5db;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-font-size: 16px;
+}
+
+.message-card, .ticket-card {
+    -fx-background-color: white;
+    -fx-border-color: #e5e7eb;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 4, 0, 0, 2);
+}
+
+.priority-badge, .ticket-type-badge, .status-badge {
+    -fx-background-color: #059669;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-padding: 4 10 4 10;
+    -fx-background-radius: 14;
+    -fx-border-radius: 14;
+}
+
+.chat-container {
+    -fx-background-color: #f8fafc;
+    -fx-border-color: #e5e7eb;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+.chat-web-view {
+    -fx-background-color: transparent;
+}
+
+.emergency-button {
+    -fx-background-color: #dc2626;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-padding: 14 24 14 24;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+}
+
+.emergency-button:hover {
+    -fx-background-color: #b91c1c;
+}
+
+/* Settings Styles */
+.settings-scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.settings-scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+.language-section, .appearance-section, .notification-section, .privacy-section, 
+.accessibility-section, .api-section, .data-section, .action-section {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 8, 0, 0, 3);
+    -fx-border-color: #e5e7eb;
+    -fx-border-radius: 12;
+}
+
+.danger-button {
+    -fx-background-color: #dc2626;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-padding: 14 24 14 24;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+}
+
+.danger-button:hover {
+    -fx-background-color: #b91c1c;
+}
+
+/* Enhanced Profile Styles */
+.profile-scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.profile-scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+.profile-image-section, .personal-info-section, .medical-info-section, 
+.emergency-section, .additional-section, .action-section {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 8, 0, 0, 3);
+    -fx-border-color: #e5e7eb;
+    -fx-border-radius: 12;
+}
+
+.profile-image {
+    -fx-background-color: #f3f4f6;
+    -fx-border-color: #e5e7eb;
+    -fx-border-radius: 75;
+    -fx-border-width: 3;
+}
+
+.symptom-category {
+    -fx-background-color: #f8fafc;
+    -fx-border-color: #e5e7eb;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+.ai-response-container {
+    -fx-background-color: #f0fdf4;
+    -fx-border-color: #bbf7d0;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+.ai-response-text {
+    -fx-background-color: #f8fafc;
+    -fx-border-color: #e5e7eb;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-font-size: 16px;
+}
+
+.reassurance-box {
+    -fx-background-color: #dbeafe;
+    -fx-border-color: #93c5fd;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+.medicine-card, .calming-tip {
+    -fx-background-color: #f8fafc;
+    -fx-border-color: #e5e7eb;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+/* Security Notice Styles */
+.security-notice {
+    -fx-background-color: #fef3c7;
+    -fx-border-color: #f59e0b;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+/* Enhanced Hospital Styles */
+.hospitals-scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.hospitals-scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+.location-section, .search-section, .map-section, .hospitals-section, .details-section {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 8, 0, 0, 3);
+    -fx-border-color: #e5e7eb;
+    -fx-border-radius: 12;
+}
+
+.map-view {
+    -fx-background-color: #f8fafc;
+    -fx-border-color: #e5e7eb;
+    -fx-border-radius: 10;
+}
+
+.features-box {
+    -fx-background-color: #f0fdf4;
+    -fx-border-color: #bbf7d0;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+.success-button {
+    -fx-background-color: #059669;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-padding: 14 24 14 24;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+}
+
+.success-button:hover {
+    -fx-background-color: #047857;
+}
+
+.hospital-card {
+    -fx-background-color: white;
+    -fx-border-color: #e5e7eb;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 4, 0, 0, 2);
+}
+
+.hospital-type-badge {
+    -fx-background-color: #059669;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-padding: 4 10 4 10;
+    -fx-background-radius: 14;
+    -fx-border-radius: 14;
+}
+
+.info-card {
+    -fx-background-color: #f8fafc;
+    -fx-border-color: #e5e7eb;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+/* Symptom Checker Enhanced Styles */
+.symptom-checker-scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.symptom-checker-scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+.symptom-section, .ai-chat-section, .medicine-section, .calming-section {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 8, 0, 0, 3);
+    -fx-border-color: #e5e7eb;
+    -fx-border-radius: 12;
+}
+
+.symptom-input {
+    -fx-background-color: white;
+    -fx-border-color: #d1d5db;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-font-size: 16px;
+}
+
+/* Blood Donors Security Styles */
+.blood-donors-container {
+    -fx-background-color: #f8fafc;
+}
+
+.donor-card {
+    -fx-background-color: white;
+    -fx-border-color: #e5e7eb;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 4, 0, 0, 2);
+}
+
+.blood-type-badge {
+    -fx-background-color: #dc2626;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-padding: 4 10 4 10;
+    -fx-background-radius: 14;
+    -fx-border-radius: 14;
+}
+
+.contact-button {
+    -fx-background-color: #059669;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-padding: 12 20 12 20;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+}
+
+.contact-button:hover {
+    -fx-background-color: #047857;
+}
+
+/* General Enhanced Styles */
+.primary-button {
+    -fx-background-color: #3b82f6;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-padding: 14 24 14 24;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+}
+
+.primary-button:hover {
+    -fx-background-color: #2563eb;
+}
+
+.secondary-button {
+    -fx-background-color: #6b7280;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-padding: 14 24 14 24;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+}
+
+.secondary-button:hover {
+    -fx-background-color: #4b5563;
+}
+
+.features-box {
+    -fx-background-color: #f0fdf4;
+    -fx-border-color: #bbf7d0;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+/* Scroll Pane Enhancements */
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .scroll-bar:vertical .thumb {
+    -fx-background-color: #d1d5db;
+    -fx-background-radius: 12;
+}
+
+.scroll-pane .scroll-bar:vertical .thumb:hover {
+    -fx-background-color: #9ca3af;
+}
+
+/* Container Enhancements */
+.main-container {
+    -fx-background-color: #f8fafc;
+}
+
+.sidebar {
+    -fx-background-color: white;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 0);
+}
+
+.nav-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #374151;
+    -fx-font-weight: normal;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-font-size: 16px;
+}
+
+.nav-button:hover {
+    -fx-background-color: #f3f4f6;
+}
+
+.nav-button.active {
+    -fx-background-color: #3b82f6;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.nav-button-text {
+    -fx-text-fill: inherit;
+    -fx-font-weight: inherit;
+    -fx-font-size: 16px;
+}
+
+.sidebar-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1f2937;
+}
+
+.sidebar-separator {
+    -fx-background-color: #e5e7eb;
+}
+
+.logout-button {
+    -fx-background-color: #dc2626;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: 500;
+}
+
+.logout-button:hover {
+    -fx-background-color: #b91c1c;
+}
