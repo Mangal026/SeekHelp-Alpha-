@@ -198,7 +198,7 @@ This project is licensed under the MIT License.
 ## Support
 
 For support and questions:
-- Email: support@seekhelp.com
+- Email: -
 - Phone: -
 
 ## Screenshots
