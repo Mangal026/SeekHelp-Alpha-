@@ -221,5 +221,5 @@ The application features a modern, clean interface with:
 - User reviews and ratings
 - Appointment booking system
  
- $$Founder:
+ Founder:
  Mangal Pandey
